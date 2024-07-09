@@ -31,6 +31,8 @@ This project should read a list of Trak workspaces from the `websites.txt` file 
 
 Use axios to make a GET request to each workspace's `/api/v1/workspace` endpoint. An example for staging would be `https://staging.trak.io/api/v1/workspace`
 
+Please note that unhealthy.trak.io should fail as it doesn't exist. dev and staging also have CORS disabled for this example.
+
 ## Project Setup
 
 ```sh
