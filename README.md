@@ -1,5 +1,3 @@
-# traksoftware-frontend-interview
-
 # Interview Requirements
 
 Hello! Thank you for taking a bit of time to show us your technical skills.
@@ -23,6 +21,11 @@ This project should read a list of Trak workspaces from the `websites.txt` file 
    b. Otherwise, display an unhealthy indicator next to the website.
 5. Set an interval to check the health of the websites every 5 minutes.
 6. Implement logic into the Refresh button to start the health checks manually. Note that this button should be disabled when already running.
+
+### Style Updates
+
+1. On mobile, only display the workspace and health columns.
+2. If a workspace is unable to load, use a default placeholder logo but hide the workspace name.
 
 ### Health Endpoint
 

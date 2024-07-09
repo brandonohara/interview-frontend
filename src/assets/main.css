@@ -1,35 +1,66 @@
-@import './base.css';
+@import "./base.css";
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
 }
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
+.container {
     display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+    flex-direction: column;
+    gap: 30px;
+    width: 1024px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 30px;
+}
+.display-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+.flex {
+    flex: 1;
+}
+.btn {
+    padding: 8px 12px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+.btn-disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+table {
+    min-width: 100%;
+}
+table tr td,
+table tr th {
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+table tr td a {
+    color: rgb(40, 131, 195);
+    text-decoration: none;
+}
+table tr td img {
+    display: inline-block;
+    max-width: 50px;
+    max-height: 50px;
+}
+.indicator {
+    display: inline-block;
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.indicator-healthy {
+    background-color: green;
+}
+.indicator-unhealthy {
+    background-color: red;
 }
